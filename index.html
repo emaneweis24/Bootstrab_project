@@ -1,0 +1,795 @@
+<html>
+    <head>
+        <title>Bootstrap</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+         <link rel="stylesheet" href="css/all.css">
+    </head>
+    <body>
+      <!-- Side Navbar -->
+<div class="side-navbar">
+  <a href="#" title="Home"><i class="fa-solid fa-magnifying-glass i2"></i></a>
+  <a href="#" title="Explore"><i class="fa-solid fa-gears web-icon"></i></a>
+  <a href="#" title="Favorites"><i class="fa-solid fa-wand-magic-sparkles web-icon"></i></a>
+  <a href="#" title="Profile"> <i class="fa-solid fa-mobile-screen-button web-icon"></i></a>
+  <a href="#" title="Profile"><i class="fa-brands fa-square-pinterest"></i></a>
+   <a href="#" title="Profile"><i class="fa-brands fa-envira "></i></a>
+</div>
+<!------------------------------------------------------------------------------------------>
+
+<nav class="navbar navbar-expand-sm fixed-top custom-navbar">
+
+  <a class="navbar-brand" href="#"><img src="IMAGES/logo.jpg" width="50" height="50">  minimal mood</a>
+
+  <!-- Navbar Toggler -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar Links -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">EXPLORE</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">MENU</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Soft</a>
+          <a class="dropdown-item" href="#">Light</a>
+          <a class="dropdown-item" href="#">Neutral</a>
+          <a class="dropdown-item" href="#">Warm</a>
+        <a class="dropdown-item" href="#">Clean</a>
+        <a class="dropdown-item" href="#">MORE.....</a>
+
+        </div>
+      </li>
+    </ul>
+
+    <!-- Right side: Search + Login -->
+    <div class="ml-auto d-flex">
+      <!-- Search -->
+      <form class="form-inline mr-2">
+        <input class="form-control mr-2" type="text" placeholder="Search" style="height: 38px;">
+        <button class="btn btn-search" type="submit" style="height: 38px;">Search</button>
+      </form>
+      <!-- Login button -->
+      <button type="button" class="btn btn-login" data-toggle="modal" data-target="#loginModal" style="height: 38px;">
+        Login
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Log in</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+  <form>
+    <div class="form-group">
+      <label>Email address</label>
+      <input type="text" class="form-control" placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control" placeholder="Enter password">
+    </div>
+
+    <!-- Checkbox -->
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="rememberMe">
+      <label class="form-check-label" for="rememberMe">Remember me</label>
+    </div>
+
+    <!-- Login button بعرض كامل الفورم -->
+    <button type="submit" class="btn btn-login-submit btn-block">Log in</button>
+  </form>
+</div>
+    </div>
+  </div>
+</div>
+<!------------------------------pictures----------------------------------->
+<div class="container-fluid p-0">
+  <div id="myCarousel"
+       class="carousel slide"
+       data-ride="carousel"
+       data-interval="10000" data-pause="false">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <!-- Slides -->
+    <div class="carousel-inner">
+
+  <div class="carousel-item active"
+       style="background-image:url('IMAGES/pct1.jpg')">
+    <img src="IMAGES/pct1.jpg" class="d-block w-100">
+
+    <div class="carousel-caption">
+      <div class="caption-box">
+        <h3>Soft Ceramic</h3>
+        <p>Hand-crafted vases with gentle curves and a calm presence</p>
+        <a href="#" class="btn btn-carousel">Explore</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item"
+       style="background-image:url('IMAGES/pct3.jpg')">
+    <img src="IMAGES/pct3.jpg" class="d-block w-100">
+
+    <div class="carousel-caption">
+      <div class="caption-box">
+        <h3>Neutral Balance</h3>
+        <p>Minimal forms designed to bring warmth and quiet harmony</p>
+        <a href="#" class="btn btn-carousel">Explore</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item"
+       style="background-image:url('IMAGES/pct2.jpg')">
+    <img src="IMAGES/pct2.jpg" class="d-block w-100">
+
+    <div class="carousel-caption">
+      <div class="caption-box">
+        <h3>Calm Lines</h3>
+        <p>Simple shapes inspired by light, space, and still moments</p>
+        <a href="#" class="btn btn-carousel">Explore</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-item"
+       style="background-image:url('IMAGES/pct4.jpg')">
+    <img src="IMAGES/pct4.jpg" class="d-block w-100">
+
+    <div class="carousel-caption">
+      <div class="caption-box">
+        <h3>Quiet Beauty</h3>
+        <p>Timeless pieces that blend softly into every interior.</p>
+        <a href="#" class="btn btn-carousel">Explore</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</div>
+<!--------------------------------------------------------------------------------------------->
+<div class="container-fluid p-0">
+  <div class="jumbotron">
+    <h1>Minimal Beauty</h1>      
+    <p>Explore hand-crafted ceramics and timeless designs that bring calm and balance to your spaceMinimal forms designed to create harmony and gentle elegance in every corner</p>
+     <a class="btn btn-primary btn-lg" role="button">View Designs</a>
+  </div>   
+</div>
+<!--------------------------------------------------------------------------------------------->
+<div class="container-fluid p-0 accordion">
+  <h1 class="text-center mb-4">Discover Our Collections</h1>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header text-center">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          Soft Ceramics
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show text-center" data-parent="#accordion">
+        <div class="card-body">
+          Explore our hand-crafted soft ceramic pieces designed to bring a gentle touch of elegance to your living space.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header text-center">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+          Neutral Balance
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse text-center" data-parent="#accordion">
+        <div class="card-body">
+          Minimal forms with neutral tones, carefully crafted to create harmony and calm in every corner of your home.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header text-center">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Timeless Designs
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse text-center" data-parent="#accordion">
+        <div class="card-body">
+          Discover our timeless ceramic pieces that blend seamlessly with modern and classic interiors, adding subtle sophistication.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------->
+<div class="container text-center">
+   <h1 class="text-center mb-4">Translate from Arabic to English</h1>
+</div>
+<div class="container-fluid p-0">
+  <h2>
+  Start typing
+  <span class="highlight-text">Click copy</span>
+</h2>
+
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-secondary btn-copy" data-toggle="modal" data-target="#myModal">
+  Copy
+</button>
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Minimal Notes</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Copied successfully
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Done</button>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+<textarea class="form-control" placeholder="Type something"></textarea>
+<div class="container text-center">
+ <h1 class="text-center mb-4">Translate from Arabic to German</h1>
+</div>
+<div class="container-fluid p-0">
+  <h2>
+  Start typing
+  <span class="highlight-text">Click copy</span>
+</h2>
+
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-secondary btn-copy" data-toggle="modal" data-target="#myModal">
+  Copy
+</button>
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Minimal Notes</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Copied successfully
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Done</button>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+<textarea class="form-control" placeholder="Type something"></textarea>
+<div class="container text-center">
+  <h1 class="text-center mb-4">Translate from Arabic to French</h1>
+</div>
+<div class="container-fluid p-0">
+ <h2>
+  Start typing
+  <span class="highlight-text">Click copy</span>
+</h2>
+
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-secondary btn-copy" data-toggle="modal" data-target="#myModal">
+  Copy
+</button>
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Minimal Notes</h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Copied successfully
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Done</button>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+<textarea class="form-control" placeholder="Type something"></textarea>
+<div class="scrol-back">
+        
+       </div><!-- /scrol-back -->
+       <h1 class="cards-h1">Selected Works</h1>
+<div class="container my-5">
+
+  <!-- Row 1 -->
+  <div class="row justify-content-center no-gutters">
+    <div class="col-md-4 col-lg-3 p-2">
+      <div class="card-m h-100">
+        <img src="images/pct7.png" class="card-img-top" alt="" style="height: 60%;">
+        <div class="card-body text-center">
+          <h5 class="card-title">Clean Lines</h5>
+          <p class="card-text">Simple shapes and calm spacing designed to keep the focus clear.</p>
+          <a href="#" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-lg-3 p-2">
+  <div class="card-m h-100">
+    <img src="images/pct8.png" class="card-img-top" alt="" style="height: 60%;">
+    <div class="card-body text-center">
+      <h5 class="card-title">Soft Light</h5>
+      <p class="card-text">Balanced lighting and gentle contrast for a peaceful visual flow.</p>
+      <a href="#" class="btn btn-primary">Explore</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-4 col-lg-3 p-2">
+  <div class="card-m h-100">
+    <img src="images/pct9.png" class="card-img-top" alt="" style="height: 60%;">
+    <div class="card-body text-center">
+      <h5 class="card-title">Pure Space</h5>
+      <p class="card-text">Open space and minimal elements to let content breathe naturally.</p>
+      <a href="#" class="btn btn-primary">Explore</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-4 col-lg-3 p-2">
+  <div class="card-m h-100">
+    <img src="images/pct10.png" class="card-img-top" alt="" style="height: 60%;">
+    <div class="card-body text-center">
+      <h5 class="card-title">Neutral Mood</h5>
+      <p class="card-text">Soft colors combined with clean structure for a timeless look</p>
+      <a href="#" class="btn btn-primary">Explore</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-4 col-lg-3 p-2">
+  <div class="card-m h-100">
+    <img src="images/pct11.png" class="card-img-top" alt="" style="height: 60%;">
+    <div class="card-body text-center">
+      <h5 class="card-title">Silent Form</h5>
+      <p class="card-text">Quiet composition that highlights simplicity and balance.</p>
+      <a href="#" class="btn btn-primary">Explore</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-4 col-lg-3 p-2">
+  <div class="card-m h-100">
+    <img src="images/pct12.png" class="card-img-top" alt="" style="height: 60%;">
+    <div class="card-body text-center">
+      <h5 class="card-title">Modern Touch</h5>
+      <p class="card-text">A subtle modern feel with smooth lines and clear alignment</p>
+      <a href="#" class="btn btn-primary">Explore</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-4 col-lg-3 p-2">
+  <div class="card-m h-100">
+    <img src="images/pct13.png" class="card-img-top" alt="" style="height: 60%;">
+    <div class="card-body text-center">
+      <h5 class="card-title">Light Balance</h5>
+      <p class="card-text">Perfect harmony between empty space and visual elements</p>
+      <a href="#" class="btn btn-primary">Explore</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-4 col-lg-3 p-2">
+  <div class="card-m h-100">
+    <img src="images/pct14.png" class="card-img-top" alt="" style="height: 60%;">
+    <div class="card-body text-center">
+      <h5 class="card-title">Calm Visual</h5>
+      <p class="card-text">A clean and relaxed style made for effortless viewing</p>
+      <a href="#" class="btn btn-primary">Explore</a>
+    </div>
+  </div>
+</div>
+  </div>
+
+</div>
+<div class="scrol-back cc">
+        
+       </div><!-- /scrol-back -->
+        <h1 class="cards-h1">Selected Works</h1>
+<div class="container my-5">
+  <div class="row justify-content-center no-gutters">
+
+    <!-- Card 1 -->
+    <div class="card custom-img-card img-fluid">
+      <img class="card-img-top" src="images/pct21.png" alt="Card image">
+
+      <div class="card-img-overlay">
+        <img src="images/pct21.png" class="rounded-circle" alt="profile">
+
+        <h4 class="card-title mt-4">Quiet Moments</h4>
+        <p class="card-text">
+          Soft light · simple details
+        </p>
+
+        <div class="div3">
+          <h4 class="card-title mt-4">Memories</h4>
+          <p class="card-text">
+            Since 2023
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card custom-img-card img-fluid">
+      <img class="card-img-top" src="images/pct17.png" alt="Card image">
+
+      <div class="card-img-overlay">
+        <img src="images/pct17.png" class="rounded-circle" alt="profile">
+
+        <h4 class="card-title mt-4">Still Frames</h4>
+        <p class="card-text">
+          Honest & timeless
+        </p>
+
+        <div class="div3">
+          <h4 class="card-title mt-4">Authentic</h4>
+          <p class="card-text">
+            Minimal story
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card custom-img-card img-fluid">
+      <img class="card-img-top" src="images/pct15.png" alt="Card image">
+
+      <div class="card-img-overlay">
+        <img src="images/pct15.png" class="rounded-circle" alt="profile">
+
+        <h4 class="card-title mt-4">Soft Archive</h4>
+        <p class="card-text">
+          Moments worth keeping
+        </p>
+
+        <div class="div3">
+          <h4 class="card-title mt-4">Calm Design</h4>
+          <p class="card-text">
+            True & simple
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--------------------------------------------------------------------------------->
+<div class="container my-4">
+  <div class="card minimal-card overflow-hidden">
+    <div class="row g-0 align-items-center">
+
+      <!-- Text -->
+      <div class="col-md-7">
+        <div class="card-body">
+          <h5 class="card-title">Quiet Persistence</h5>
+          <small class="card-meta">Minimal Thoughts · Feb 2026</small>
+
+          <p class="card-text mt-3">
+            Real strength doesn’t shout.
+            It grows quietly, through patience, consistency,
+            and showing up every day — even when no one notices.
+            Minimal steps, honest effort, lasting results.
+          </p>
+
+          <div class="card-actions mt-3">
+            <button class="btn btn-main"><i class="fas fa-bookmark"></i>Save</button>
+            <button class="btn btn-main"><i class="fas fa-clock"></i>Read</button>
+            <button class="btn btn-main"><i class="fas fa-play"></i>Listen</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="col-md-5">
+        <img src="images/pct5.png" class="img-fluid clip-img">
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container my-4 cardcard">
+  <div class="card minimal-card overflow-hidden">
+    <div class="row g-0 align-items-center">
+      <!-- Image -->
+      <div class="col-md-5">
+        <img src="images/pct10.png" class="img-fluid clip-img">
+      </div>
+      <!-- Text -->
+      <div class="col-md-7">
+        <div class="card-body">
+          <h5 class="card-title">Quiet Persistence</h5>
+          <small class="card-meta">Minimal Thoughts · Feb 2026</small>
+
+          <p class="card-text mt-3">
+            Real strength doesn’t shout.
+            It grows quietly, through patience, consistency,
+            and showing up every day — even when no one notices.
+            Minimal steps, honest effort, lasting results.
+          </p>
+
+          <div class="card-actions mt-3">
+            <button class="btn btn-main"><i class="fas fa-bookmark"></i>Save</button>
+            <button class="btn btn-main"><i class="fas fa-clock"></i>Read</button>
+            <button class="btn btn-main"><i class="fas fa-play"></i>Listen</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container my-4">
+  <div class="card minimal-card overflow-hidden">
+    <div class="row g-0 align-items-center">
+
+      <!-- Text -->
+      <div class="col-md-7">
+        <div class="card-body">
+          <h5 class="card-title">Quiet Persistence</h5>
+          <small class="card-meta">Minimal Thoughts · Feb 2026</small>
+
+          <p class="card-text mt-3">
+            Real strength doesn’t shout.
+            It grows quietly, through patience, consistency,
+            and showing up every day — even when no one notices.
+            Minimal steps, honest effort, lasting results.
+          </p>
+
+          <div class="card-actions mt-3">
+            <button class="btn btn-main"><i class="fas fa-bookmark"></i>Save</button>
+            <button class="btn btn-main"><i class="fas fa-clock"></i>Read</button>
+            <button class="btn btn-main"><i class="fas fa-play"></i>Listen</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="col-md-5">
+        <img src="images/pct19.png" class="img-fluid clip-img">
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="container my-4 cardcard">
+  <div class="card minimal-card overflow-hidden">
+    <div class="row g-0 align-items-center">
+      <!-- Image -->
+      <div class="col-md-5">
+        <img src="images/pct21.png" class="img-fluid clip-img">
+      </div>
+
+
+      <!-- Text -->
+      <div class="col-md-7">
+        <div class="card-body">
+          <h5 class="card-title">Quiet Persistence</h5>
+          <small class="card-meta">Minimal Thoughts · Feb 2026</small>
+
+          <p class="card-text mt-3">
+            Real strength doesn’t shout.
+            It grows quietly, through patience, consistency,
+            and showing up every day — even when no one notices.
+            Minimal steps, honest effort, lasting results.
+          </p>
+
+          <div class="card-actions mt-3">
+            <button class="btn btn-main"><i class="fas fa-bookmark"></i>Save</button>
+            <button class="btn btn-main"><i class="fas fa-clock"></i>Read</button>
+            <button class="btn btn-main"><i class="fas fa-play"></i>Listen</button>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+<!------------------------------------------------------------------>
+<div class="container my-5">
+  <div class="row justify-content-center">
+
+    <!-- Card 1 -->
+    <div class="col-md-3 col-6 mb-4">
+       <div class="card social-card text-center">
+        <div class="card-body p-3">
+          <h6 class="card-title mb-2">Subscribe Now</h6>
+          <img src="images/pct25.png"
+               class="rounded-circle mb-2"
+               width="45" height="45"
+               alt="Facebook">
+          <a href="#" class="small font-weight-bold text-primary d-block">
+            Visit Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-3 col-6 mb-4">
+      <div class="card social-card text-center">
+        <div class="card-body p-3">
+          <h6 class="card-title mb-2">Subscribe Now</h6>
+          <img src="images/pct22.png"
+               class="rounded-circle mb-2"
+               width="45" height="45"
+               alt="Instagram">
+          <a href="#" class="small font-weight-bold text-primary d-block">
+            Visit Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-3 col-6 mb-4">
+      <div class="card social-card text-center">
+        <div class="card-body p-3">
+          <h6 class="card-title mb-2">Subscribe Now</h6>
+          <img src="images/pct23.png"
+               class="rounded-circle mb-2"
+               width="45" height="45"
+               alt="Twitter">
+          <a href="#" class="small font-weight-bold text-primary d-block">
+            Visit Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-3 col-6 mb-4">
+     <div class="card social-card text-center">
+        <div class="card-body p-3">
+          <h6 class="card-title mb-2">Subscribe Now</h6>
+          <img src="images/pct24.png"
+               class="rounded-circle mb-2"
+               width="45" height="45"
+               alt="LinkedIn">
+          <a href="#" class="small font-weight-bold text-primary d-block">
+            Visit Page
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--------------------------------------------------------------------------------->
+<footer>
+
+<div class="container">
+
+<div class="row text-center">
+
+<!-- Column 1 -->
+<div class="col-md-4 mb-4">
+
+<img src="images/pct1.jpg" class="footer-logo">
+
+<h5 class="footer-title">About Us</h5>
+
+<div class="footer-text">
+Tel: 235-567-872 <br>
+Address: Egypt <br>
+Email: eman@mail.com
+</div>
+
+</div>
+
+
+<!-- Column 2 -->
+<div class="col-md-4 mb-4">
+
+<img src="images/pct19.png" class="footer-logo">
+
+<h5 class="footer-title">Quick Links</h5>
+
+<div class="footer-links">
+<a href="#">Home</a>
+<a href="#">Menu</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+</div>
+
+</div>
+
+
+<!-- Column 3 -->
+<div class="col-md-4 mb-4">
+
+<img src="images/pct21.png" class="footer-logo">
+
+<h5 class="footer-title">Our Vision</h5>
+
+<div class="footer-text">
+We provide quality food <br>
+With simple and modern taste <br>
+Making your day better
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer-line"></div>
+
+<p class="copyright">
+© 2025 YourWebsite. All Rights Reserved
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
