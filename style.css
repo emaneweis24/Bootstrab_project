@@ -407,70 +407,81 @@ textarea.form-control:focus {
 .card-body{
   margin-top: 25px;
 }
+/* ضبط كروت الصور والـ Overlay وتفاصيلها */
 .custom-img-card {
-  margin: 0 35px;
-  width: 300px;
-  height: 230px;
+  margin: 15px auto;
+  width: 100% !important;
+  max-width: 320px;
+  height: 380px !important;
   position: relative;
   overflow: hidden;
   border-radius: 15px;
   background-color: #F6F4F1; 
-  line-height: 5px;
+  line-height: 1.5 !important; /* تصحيح السطور الضيقة */
   margin-bottom: 25px;
-  background-color:rgba(246, 244, 241, 0.6);
-  transition: .75s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
 }
+
 .custom-img-card:hover {
-  transform: scale(.9); 
-  z-index: 2;
+  transform: translateY(-5px);
   cursor: pointer;
- 
 }
+
 .custom-img-card .card-img-top {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .custom-img-card .card-img-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 0 12px;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 60%, transparent 100%);
+  color: #fff !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
   box-sizing: border-box;
-  
 }
+
+.custom-img-card .card-title, 
+.custom-img-card .card-text {
+  color: #ffffff !important; /* عشان النصوص تبان واضحة جوه الكارت */
+  margin-top: 5px !important;
+}
+
 .custom-img-card .rounded-circle {
-  width: 60px;
-  height: 70px;
+  width: 50px !important;
+  height: 50px !important;
   object-fit: cover;
   position: absolute;
-  top: 100px;
-  left: 12px;
-  border: 1px solid #D8D3CC;
-  background-color: #F6F4F1;
+  top: 20px;
+  left: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
 }
-.custom-img-card .card-title {
-  color: #3a3a37;
-  font-weight: 500;
-  font-size: 15px;
-}
-.custom-img-card .card-text {
-  color: #555554;
-  font-size: 13px;
-}
+
 .div3 {
-  margin-top: 120px;
-  line-height: 2px;
+  margin-top: 15px !important;
+  line-height: 1.4 !important;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 10px;
 }
+
+/* ضبط الكروت اللي تحت (Minimal Cards) عشان متبقاش منكمشة */
 .minimal-card {
-  background: var(--bg-card, #f8f9fa);
+  background: #f8f9fa;
   border: none;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,.08);
   overflow: hidden; 
-  background-color: #f5f5f5;
   margin-bottom: 30px;
+  width: 100%;
 }
 .card-title {
   color: var(--text-dark, #333);
@@ -628,4 +639,16 @@ footer{
 background:#f6f1ea;
 padding:70px 0 30px;
 border-top:1px solid #e9e2da;
+}
+/* ضبط حجم وشكل الصور الدوائر الصغيرة في الكروت */
+.custom-img-card .rounded-circle {
+  width: 55px !important;
+  height: 55px !important;
+  object-fit: cover;
+  position: absolute;
+  top: 15px; /* ظبطنا مكانها فوق بدل ما كانت نازلة غلط */
+  left: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
